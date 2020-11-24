@@ -1,4 +1,4 @@
 $(window).on('load',function(){
-    $('#preloader').fadeOut();
+    $('#preloader').delay(500).fadeOut();
     $('#loadingimg').delay(500).fadeOut();
 });
