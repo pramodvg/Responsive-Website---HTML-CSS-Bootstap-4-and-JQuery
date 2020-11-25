@@ -23,6 +23,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 #loadingimg {
@@ -58,7 +59,7 @@ h6 {
 }
 
 #home-overlay {
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.8);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -67,8 +68,9 @@ h6 {
   left: 0;
 }
 
-section{
+section {
   background: white;
+  overflow: hidden;
 }
 
 /* home section */
@@ -144,7 +146,99 @@ section{
 }
 #down-arrow:hover {
   color: #f4c613;
-  
+}
+/*===============   Home End    =============*/
+
+/*===================  about Start ============================*/
+.about-container {
+  padding: 100px 0;
+}
+.card-container {
+  padding: 100px 0;
+}
+.verticaltx h5 {
+  color: #f4c613;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 9px;
+  display: inline-block;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  position: relative;
+  top: 60px;
+  left: -60px;
+}
+.verticaltx h2 {
+  margin-left: 30px;
+  font-size: 42px;
+  font-weight: 100;
+  line-height: 45px;
+}
+#about-img img {
+  margin: 0 auto;
+}
+/* cards */
+
+.cardbox {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f4f4f4;
+  padding: 80px 30px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
 }
 
-/*===============   Home End    =============*/
+.cardbox p {
+  text-align: justify;
+}
+.cardbox i {
+  margin: 0;
+  font-size: 42px;
+}
+
+.cardbox:hover i{
+  transform: translatey(-15px);
+  -webkit-transform: translatey(-15px);
+  -moz-transform: translatey(-15px);
+  -ms-transform: translatey(-15px);
+  -o-transform: translatey(-15px);
+}
+
+.cardbox:hover{
+  background-color: #f4c613;
+}
+.cardbox:hover hr{
+  background-color: white;
+}
+.cardbox hr{
+  width: 42px;
+  height: 3px;
+  background-color: #f4c613;
+  margin: 15px auto;
+  border: none;
+}
+.cardbox:hover p,
+.cardbox:hover i,
+.cardbox:hover h5{
+  color: white;
+}
+.cardbox ,
+.cardbox i,
+.cardbox hr{
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+}
+
+/* cards end */
+
+/*===================  about END ============================*/
