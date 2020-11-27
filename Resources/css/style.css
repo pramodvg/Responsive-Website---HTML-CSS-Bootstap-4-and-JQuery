@@ -151,7 +151,7 @@ section {
 
 /*===================  about Start ============================*/
 .about-container {
-  padding: 100px 0;
+  padding: 120px 0px;
 }
 .card-container {
   padding: 100px 0;
@@ -173,10 +173,22 @@ section {
   left: -60px;
 }
 .verticaltx h2 {
+  min-width: 300px;
   margin-left: 30px;
   font-size: 42px;
   font-weight: 100;
   line-height: 45px;
+}
+
+#ab-right-box p {
+  font-size: 14px;
+  text-align: justify;
+}
+#about-img {
+  margin-top: 60px;
+}
+.cal-md-12 {
+  width: 100%;
 }
 #about-img img {
   margin: 0 auto;
@@ -189,10 +201,10 @@ section {
   background-color: #f4f4f4;
   padding: 80px 30px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .cardbox p {
@@ -203,7 +215,7 @@ section {
   font-size: 42px;
 }
 
-.cardbox:hover i{
+.cardbox:hover i {
   transform: translatey(-15px);
   -webkit-transform: translatey(-15px);
   -moz-transform: translatey(-15px);
@@ -211,13 +223,13 @@ section {
   -o-transform: translatey(-15px);
 }
 
-.cardbox:hover{
+.cardbox:hover {
   background-color: #f4c613;
 }
-.cardbox:hover hr{
+.cardbox:hover hr {
   background-color: white;
 }
-.cardbox hr{
+.cardbox hr {
   width: 42px;
   height: 3px;
   background-color: #f4c613;
@@ -226,12 +238,12 @@ section {
 }
 .cardbox:hover p,
 .cardbox:hover i,
-.cardbox:hover h5{
+.cardbox:hover h5 {
   color: white;
 }
-.cardbox ,
+.cardbox,
 .cardbox i,
-.cardbox hr{
+.cardbox hr {
   transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -242,3 +254,128 @@ section {
 /* cards end */
 
 /*===================  about END ============================*/
+/* ========================= Team css ========================= */
+.verticaltx p {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.team-member {
+  margin: 0px 8px;
+  position: relative;
+}
+.team-member-overly{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 0%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+}
+.team-overly{
+  height: 100%;
+  width: 100%;
+ padding: 80px 0;
+}
+
+.team-overly h6 {
+  color: #f4c613;
+  text-align: center;
+}
+.team-overly ul {
+  list-style-type: none;
+  padding: 0;
+}
+.team-overly p {
+  color: white;
+}
+.team-overly ul li {
+  display: inline-block;
+  padding: 0;
+}
+.team-overly ul li a {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  line-height: 35px;
+  color: white;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+}
+
+ul.socialicon {
+  padding: 0;
+  margin-top: 20px;
+}
+.team-member:hover .team-member-overly {
+  height: 100%;
+}
+ul.socialicon li:nth-child(1) a:hover {
+  background: #3b5998;
+  border-color: transparent;
+}
+ul.socialicon li:nth-child(2) a:hover {
+  background: #ff3300;
+  border-color: transparent;
+}
+ul.socialicon li:nth-child(3) a:hover {
+  background: #3066db;
+  border-color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  font-size: 90px;
+}
+
+.skill {
+  margin: 20px 0;
+}
+.progress {
+  height: 25px;
+  margin: 0;
+  overflow: visible;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.progress-bar{
+  background-color: #f4c613;
+  position: relative;
+  overflow: visible;
+}
+.progress-bar span{
+  font-size: 11px;
+  position: absolute;
+  left: 97%;
+  top: -47px;
+  text-align: center;
+  line-height: 14px;
+  background-color: #212226;
+  font-weight: 100;
+  padding: 3px;
+}
+.progress-bar span:before{
+  content: "";
+  border-top: 8px solid #212226;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 24%;
+}
