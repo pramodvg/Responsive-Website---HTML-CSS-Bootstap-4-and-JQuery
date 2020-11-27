@@ -379,3 +379,9 @@ ul.socialicon li:nth-child(3) a:hover {
   bottom: -8px;
   left: 24%;
 }
+
+.statement-bgimg{
+  background-image: url(../img/tech/tech-quote.jpg);
+  background-position: center;
+  background-size: cover;
+}
