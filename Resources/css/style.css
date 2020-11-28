@@ -150,19 +150,21 @@ section {
 /*===============   Home End    =============*/
 
 /*===================  about Start ============================*/
+
+
+/* =========================================================== */
+/* ************************ pading container */
+/* ============================================================ */
 .about-container {
   padding: 120px 0px;
+}
+.about-container-md{
+  padding: 100px 0px;
 }
 .card-container {
   padding: 100px 0;
 }
 .verticaltx h5 {
-  color: #f4c613;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  word-spacing: 9px;
-  display: inline-block;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -172,9 +174,21 @@ section {
   top: 60px;
   left: -60px;
 }
+.verticaltx h5,
+.heading-horizontal h5{
+  color: #f4c613;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 9px;
+  display: inline-block;
+}
 .verticaltx h2 {
-  min-width: 300px;
   margin-left: 30px;
+}
+.verticaltx h2,
+.heading-horizontal h2{
+  min-width: 300px;
   font-size: 42px;
   font-weight: 100;
   line-height: 45px;
@@ -193,7 +207,7 @@ section {
 #about-img img {
   margin: 0 auto;
 }
-/* cards */
+/*=============================== cards ============================*/
 
 .cardbox {
   margin: 10px 0;
@@ -254,6 +268,8 @@ section {
 /* cards end */
 
 /*===================  about END ============================*/
+
+
 /* ========================= Team css ========================= */
 .verticaltx p {
   margin-top: 30px;
@@ -341,6 +357,9 @@ ul.socialicon li:nth-child(3) a:hover {
   font-size: 90px;
 }
 
+/* ========================= Team END========================= */
+
+/* ========================= Progress bars ========================= */
 .skill {
   margin: 20px 0;
 }
@@ -379,9 +398,144 @@ ul.socialicon li:nth-child(3) a:hover {
   bottom: -8px;
   left: 24%;
 }
+/* ========================= Progress Bars End ========================= */
 
+/* ========================= Statement Quote ========================= */
+#statement-content{
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .statement-bgimg{
   background-image: url(../img/tech/tech-quote.jpg);
   background-position: center;
   background-size: cover;
 }
+#statement h3{
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
+}
+#statement p{
+  color: #f4c613;
+}
+/* ========================= Statement Quote End========================= */
+
+/* ========================= Services ========================= */
+.heading-horizontal{
+  margin-bottom: 80px;
+}
+.service-icon i{
+  font-size: 35px;
+  padding-top: 8px;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+}
+.service-item:hover i{
+  color: #f4c613;
+  transform: translateX(-25px);
+  -webkit-transform: translateX(-25px);
+  -moz-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  -o-transform: translateX(-25px);
+}
+.service-item:hover h5{
+  color: #212226;
+}
+.service-right-list{
+  text-align: left;
+}
+.service-right-list p{
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 10px;
+}
+.service-img img{
+padding: 50px;
+}
+.service-right-list h5{
+  color: #f4c613;
+}
+.service-right-list h3{
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+/* ========================= Services ========================= */
+
+/* ========================= Services tabs ========================= */
+#service-tabs{
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+}
+
+#tab-list li{
+  padding: 30px 10px;
+}
+#tab-list li a{
+  font-weight: 700;
+text-decoration: none;
+color: #212226;
+text-transform: uppercase;
+font-weight: 400;
+}
+
+#service-tabs ul li.r-tabs-state-active a{
+  color: #f4c613;
+  border-bottom: 3px solid #f4c613;
+  padding-bottom: 5px;
+}
+.service-left-container{
+  padding: 50px;
+}
+.service-left-container h2{
+  font-size: 48px;
+  color: #bbb;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.service-left-container h3{
+  font-size: 32;
+  margin-bottom: 30px;
+}
+.service-left-container p{
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.service-left-container button{
+  border: 1px solid #f4c613;
+  padding: 8px 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: #f4c613;
+  color: white;
+  transition: all 400ms;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+}
+.service-left-container button:hover{
+  border: 1px solid #212226;
+  padding: 8px 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: #212226;
+  color: white;
+}
+.servicetabs img{
+  width: 100%;
+  margin: 0 auto;
+}
+.servicetabs .col-md-6{
+  padding: 0;
+  background-color: white;
+}
+
+/* ========================= Services tabs end ========================= */
