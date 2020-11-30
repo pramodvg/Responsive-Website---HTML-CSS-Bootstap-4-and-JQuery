@@ -31,6 +31,9 @@ $(function(){
         this.destroy();
     });
 
+
+	// ================ for statement quote bg movement =================== 
+
     var velocity = 0.5;
 
 function update(){ 
@@ -44,15 +47,22 @@ $('.statement-section').each(function() {
    };
 
  $(window).bind('scroll', update);
-
-
-
+$('.grid').isotope({
+  // options
+  itemSelector: '.portfolio-item',
+  layoutMode: 'fitRows'
+});
 
 });
+
+
+// =========== for service tabs ===========
 $('#service-tabs').responsiveTabs({
 	animation: 'slide'
 });
 
+
+// ============ for smooth scrolling ============
 function init(){
 	new SmoothScroll(document,120,12)
 }
