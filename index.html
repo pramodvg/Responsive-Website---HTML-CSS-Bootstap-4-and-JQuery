@@ -30,7 +30,6 @@
       type="text/css"
       href="Resources/css/responsive-tabs/style.css"
     />
-    <link rel="stylesheet" type="text/css" href="Resources/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -43,6 +42,13 @@
       rel="stylesheet"
       href="Resources/css/owlcourosal/owl.theme.default.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Resources/css/megnific-popup/magnific-popup.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css" />
   </head>
 
   <body onload="init()">
@@ -640,183 +646,370 @@
     </section>
 
     <section id="work">
-      <div class="about-container">
+      <div class="about-container-md">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div id="portfolio-heading">
-              <div class="verticaltx">
-                <h5 class="ab-vtx1">find our work</h5>
-                <h2>Our <br />Amazing<strong>Work</strong></h2>
+                <div class="verticaltx">
+                  <h5 class="ab-vtx1">find our work</h5>
+                  <h2>Our <br />Amazing<strong>Work</strong></h2>
+                </div>
               </div>
             </div>
+            <div class="col-md-12">
+              <div id="filter-buttons-gp">
+                <button class="active" data-filter="*">
+                  <span>all</span>
+                </button>
+                <button data-filter=".webb">
+                  <span>logo</span>
+                </button>
+                <button data-filter=".desin">
+                  <span>web</span>
+                </button>
+                <button data-filter=".mobile">
+                  <span>mobile</span>
+                </button>
+                <button data-filter=".desktop">
+                  <span>desktop</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <section id="portfolio-wrapper">
-          <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/001.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/001.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+          <div id="isotop-container">
+            <div class="row no-gutters">
+              <div class="col-md-3 desktop mobile webb">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/001.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/001.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/002.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/002.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 mobile">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/002.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/002.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/003.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/003.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 desin">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/003.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/003.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/004.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/004.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 webb desktop">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/004.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/004.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/005.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/005.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 webb">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/005.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/005.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/006.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/006.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 desin mobile webb">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/006.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/006.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/007.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/007.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 mobile desktop">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/007.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/007.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="portfolio-item">
-                    <a
-                      href="Resources/img/portfolio/008.jpg"
-                      title="Add Disctiption"
-                    >
-                      <img
-                        src="Resources/img/portfolio/008.jpg"
-                        class="img-fluid"
-                        alt="01"
-                      />
-                    </a>
-                    <div class="work-overly">
-                      <h3>Web Desing</h3>
-                      <span></span>
-                      <h5>developing website</h5>
-                    </div>
+              </div>
+              <div class="col-md-3 desktop">
+                <div class="portfolio-item">
+                  <a
+                    href="Resources/img/portfolio/008.jpg"
+                    title="Add Disctiption"
+                  >
+                    <img
+                      src="Resources/img/portfolio/008.jpg"
+                      class="img-fluid"
+                      alt="01"
+                    />
+                  </a>
+                  <div class="work-overly">
+                    <h3>Web Desing</h3>
+                    <span></span>
+                    <h5>developing website</h5>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </section>
 
+    <section id="feedback">
+      <div id="feedback-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="feedback-heading">
+                <div class="verticaltx">
+                  <h5 class="ab-vtx1">who we are</h5>
+                  <h2>What Our <br /><strong>Customers</strong> Say</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div id="feedback-slider" class="owl-carousel owl-theme">
+                <div class="feedback-box">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="feed-title">
+                        <h4>Quality Support</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="stars">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="feed-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus veritatis, totam doloribus commodi nemo, culpa
+                        facere voluptas nihil praesentium minima nesciunt
+                        necessitatibus excepturi, officia enim at ipsa aliquid
+                        nostrum vel accusamus fuga odio. Quaerat minus illum,
+                        architecto quas cum eveniet dolores vel nesciunt aliquid
+                        nulla?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="feed-img">
+                        <img
+                          src="Resources/img/testimonial/client-1.jpg"
+                          alt="cust1"
+                          class="img-fluid rounded-circle"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="feed-user-data">
+                        <h6>pramod vaghasia</h6>
+                        <h6>Yash Anghan</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback-box">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="feed-title">
+                        <h4>Quality Support</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="stars">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="feed-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus veritatis, totam doloribus commodi nemo, culpa
+                        facere voluptas nihil praesentium minima nesciunt
+                        necessitatibus excepturi, officia enim at ipsa aliquid
+                        nostrum vel accusamus fuga odio. Quaerat minus illum,
+                        architecto quas cum eveniet dolores vel nesciunt aliquid
+                        nulla?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="feed-img">
+                        <img
+                          src="Resources/img/testimonial/client-1.jpg"
+                          alt="cust1"
+                          class="img-fluid rounded-circle"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="feed-user-data">
+                        <h6>pramod vaghasia</h6>
+                        <h6>Yash Anghan</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback-box">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="feed-title">
+                        <h4>Quality Support</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="stars">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="feed-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus veritatis, totam doloribus commodi nemo, culpa
+                        facere voluptas nihil praesentium minima nesciunt
+                        necessitatibus excepturi, officia enim at ipsa aliquid
+                        nostrum vel accusamus fuga odio. Quaerat minus illum,
+                        architecto quas cum eveniet dolores vel nesciunt aliquid
+                        nulla?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="feed-img">
+                        <img
+                          src="Resources/img/testimonial/client-1.jpg"
+                          alt="cust1"
+                          class="img-fluid rounded-circle"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="feed-user-data">
+                        <p>qquave quazi</p>
+                        <p>Yash Anghan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </section>
 
     <script src="js/jquery.js"></script>
@@ -825,6 +1018,7 @@
     <script src="js/waypoints/jquery.waypoints.min.js"></script>
     <script src="JS/responsive-tabs/jquery.responsiveTabs.min.js"></script>
     <script src="JS/isotgallary/isotop.js"></script>
+    <script src="JS/egnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/myscript.js"></script>
   </body>
 </html>
