@@ -168,8 +168,9 @@ section {
 /* =========================================================== */
 /* ************************ pading container End */
 /* ============================================================ */
-.verticaltx{
+.verticaltx {
   display: inline-block;
+  padding-bottom: 50px;
 }
 .verticaltx h5 {
   transform: rotate(-90deg);
@@ -180,7 +181,6 @@ section {
   position: relative;
   top: 60px;
   left: -60px;
-  
 }
 .verticaltx h5,
 .heading-horizontal h5 {
@@ -196,7 +196,6 @@ section {
 }
 .verticaltx h2,
 .heading-horizontal h2 {
-  
   min-width: 220px;
   font-size: 42px;
   font-weight: 100;
@@ -220,7 +219,6 @@ section {
 
 .cardbox {
   margin: 10px 0;
-  padding: 10px;
   background-color: #f4f4f4;
   padding: 80px 30px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
@@ -510,7 +508,7 @@ ul.socialicon li:nth-child(3) a:hover {
   line-height: 24px;
   margin-bottom: 30px;
 }
-.service-left-container button {
+.service-left-container button,.pricing-btn button {
   border: 1px solid #f4c613;
   padding: 8px 30px;
   border-radius: 50px;
@@ -552,8 +550,12 @@ ul.socialicon li:nth-child(3) a:hover {
 #work {
   padding-bottom: 100px;
 }
+
 #portfolio-heading .verticaltx {
   padding-bottom: 80px;
+}
+#portfolio-wrapper {
+  padding-bottom: 100px;
 }
 #portfolio-wrapper .col-md-3 {
   padding: 0;
@@ -660,37 +662,179 @@ ul.socialicon li:nth-child(3) a:hover {
 /* ========================= protfolio End========================= */
 
 /* =================== feedback =============== */
-#feedback-slider{
-  position: absolute;
-  top: -110px;
+
+#feedback {
+  background-color: #f4f4f4;
+  padding-bottom: 40px;
+  overflow: visible;
+}
+#feedback .verticaltx {
+  padding: 80px 0;
+  margin-bottom: 50px;
+}
+.feed-img {
+  text-align: center;
+}
+.feed-img img {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+}
+#feedback-slider {
+  top: -120px;
+  margin-left: 50px;
   color: white;
   background-color: #f4c613;
 }
-#feedback-container{
-  position: relative;
-  margin-top: 100px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  background-color: #f4f4f4;
+.feed-user-data {
+  width: 140px;
+  margin-top: 25px;
+  text-align: left;
 }
-.feedback-box{
+
+.feed-user-data h6 {
+  margin: 0;
+  text-align: center, left;
+  line-height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.feedback-box {
   padding: 20px;
 }
-.stars{
+.stars {
   text-align: center;
 }
-.stars ul li{
+.stars ul li {
   display: inline-block;
 }
-.stars ul{
+.stars ul {
   margin: 5px 20px 0 0;
   text-align: right;
 }
-.feed-text{
+.feed-text {
   padding: 20px 10px 10px 4px;
   text-align: justify;
 }
-.feed-user-data p{
- 
-}
 /* =================== feedback end=============== */
+
+/* =============== Pricing box ================ */
+.pricing-box h4 {
+  color: #f4c613;
+}
+.pricing-box {
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+#dark{
+  background-color: black;
+  color: white;
+}
+.line {
+  width: 100%;
+  margin: 10px auto;
+  border-bottom: 1px solid #ebebeb;
+}
+.pricing-box1 {
+  padding: 0;
+  margin: 0;
+  display: table-row;
+}
+.rate-box h2,
+p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+
+}
+.rate-box i{
+  color: #bbb;
+  margin-top: 11px;
+  position: absolute;
+}
+
+.rate-box {
+  vertical-align: top;
+  display: table-cell;
+}
+.rate-box p {
+  font-weight: 400;
+  font-size: x-small;
+}
+.rate-dis {
+  font-size: 11px;
+  padding-left: 30px;
+  vertical-align: top;
+  display: table-cell;
+}
+.rate-dis p{
+  text-align: justify;
+}
+.price-list ul{
+  padding: 0;
+ list-style: none;
+}
+.price-list ul li p{
+  margin: 15px 0;
+  text-align: left;
+  padding: 0;
+}
+.price-list ul li p i{
+  margin-right: 10px;
+}
+.pricing-btn{
+  margin-top: 50px;
+}
+.pricing-btn button{
+  width: 100%;
+}
+#dark-btn button{
+  background-color: white;
+  color: black;
+}
+.pricing-box:hover,
+#dark:hover{
+  color: white;
+  background-color: #f4c613;
+}
+.pricing-box:hover h4,
+#dark:hover h4{
+ color: white;
+}
+.pricing-box:hover i,
+#dark:hover i{
+ color: white;
+}
+.pricing-box:hover button,
+#dark:hover button{
+  border: black;
+background-color: black;
+color: white;
+}
+
+/* =============== Pricing box end ================ */
+
+
+/* ============ CountDown ============== */
+.verticaltx{
+  color: white;
+}
+#auto-counter{
+  position: relative;
+}
+#aout-counter-bg{
+  position: fixed;
+  position: absolute;
+  background-image: url(../img/stats/stats-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#counter-overly{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* ============ CountDown End============== */

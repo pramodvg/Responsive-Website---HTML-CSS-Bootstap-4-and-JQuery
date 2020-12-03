@@ -36,6 +36,7 @@ $(function () {
 
   $('#team-members').owlCarousel({
     items: 2,
+    autoplay:true,
     smartSpeed: 400,
     loop: true,
     autoplayHoverPause: true,
@@ -48,6 +49,7 @@ $(function () {
   });
   $('#feedback-slider').owlCarousel({
     items: 1,
+    autoplay:true,
     smartSpeed: 400,
     loop: true,
     autoplayHoverPause: true,
