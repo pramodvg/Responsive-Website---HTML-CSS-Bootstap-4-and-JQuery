@@ -91,6 +91,12 @@ $(function () {
     });
   }
   $(window).bind('scroll', update);
+// ================================  Auto Counter =======
+$('.counter').counterUp({
+  delay: 10,
+  time: 2000,
+  offset: 1
+});
 });
 //******************************************** */ on document ready execute method
 
