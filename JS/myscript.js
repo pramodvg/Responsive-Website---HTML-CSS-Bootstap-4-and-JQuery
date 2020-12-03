@@ -32,11 +32,10 @@ $(function () {
     });
   });
 
-  // team members slider
-
+  // team members sliders
   $('#team-members').owlCarousel({
     items: 2,
-    autoplay:true,
+    autoplay: true,
     smartSpeed: 400,
     loop: true,
     autoplayHoverPause: true,
@@ -49,7 +48,7 @@ $(function () {
   });
   $('#feedback-slider').owlCarousel({
     items: 1,
-    autoplay:true,
+    autoplay: true,
     smartSpeed: 400,
     loop: true,
     autoplayHoverPause: true,
@@ -60,8 +59,21 @@ $(function () {
       '<i class="fa fa-angle-right" aria-hidden="true"></i>',
     ],
   });
-  // progress animation on scroll
+  $('#client-list').owlCarousel({
+    items: 6,
+    autoplay: false,
+    smartSpeed: 400,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    ],
+  });
 
+  // progress animation on scroll
   $('#team-section').waypoint(function () {
     $('.progress-bar').each(function () {
       $(this).animate(
@@ -75,7 +87,6 @@ $(function () {
   });
 
   // ================ for statement quote bg movement ===================
-
   var velocity = 0.5;
 
   function update() {
@@ -91,12 +102,12 @@ $(function () {
     });
   }
   $(window).bind('scroll', update);
-// ================================  Auto Counter =======
-$('.counter').counterUp({
-  delay: 10,
-  time: 2000,
-  offset: 1
-});
+  // ================================  Auto Counter =======
+  $('.counter').counterUp({
+    delay: 10,
+    time: 2000,
+    offset: 1,
+  });
 });
 //******************************************** */ on document ready execute method
 

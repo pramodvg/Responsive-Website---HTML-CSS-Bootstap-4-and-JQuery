@@ -154,16 +154,20 @@ section {
 /* =========================================================== */
 /* ************************ pading container */
 /* ============================================================ */
-.about-container {
-  padding: 120px 0px;
+.about-container {        
+  padding: 120px 0px;  
+  /* set padding top - bottom nothing else*/
 }
 .about-container-md {
   padding: 0px 0px;
   margin-top: 50px;
+  /* set padding top - bottom nothing else*/
 }
 .card-container {
   padding: 100px 0;
+  /* set padding top - bottom nothing else*/
 }
+
 
 /* =========================================================== */
 /* ************************ pading container End */
@@ -819,7 +823,7 @@ color: white;
 
 
 /* ============ CountDown ============== */
-.verticaltx{
+#counter-heading .verticaltx{
   color: white;
 }
 #auto-counter{
@@ -872,7 +876,16 @@ color: white;
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
 }
-
-
-
 /* ============ CountDown End============== */
+
+
+/* ============ Our Clients ========== */
+.client-icon{
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 150px;
+  line-height: 100px;
+}
+.client-icon img{
+  display: inline-block !important;
+}
