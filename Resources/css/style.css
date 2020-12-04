@@ -202,7 +202,8 @@ section {
   min-width: 220px;
   font-size: 42px;
   font-weight: 100;
-  line-height: 38px;
+  line-height: 45px;
+  padding-bottom: 30px;
 }
 
 #ab-right-box p {
@@ -282,7 +283,7 @@ section {
 /* ========================= Team css ========================= */
 
 .verticaltx,
-.blog-heading p{
+.blog-heading p {
   margin: 0;
   padding: 40px 10px 0 0;
   text-align: justify;
@@ -531,7 +532,8 @@ ul.socialicon li:nth-child(3) a:hover {
 }
 .service-left-container button,
 .pricing-btn button,
-.blog-btn {
+.blog-btn,
+.form-btn button {
   border: 1px solid #f4c613;
   padding: 8px 30px;
   border-radius: 50px;
@@ -918,41 +920,120 @@ ul.socialicon li:nth-child(3) a:hover {
 /* ========== Our Client End ==========*/
 
 /* =========== Blog Posts ============== */
-#blog-section{
+#blog-section {
   background-color: #f4f4f4;
 }
-.blog-heading button{
-    padding: 8px 60px;
+.blog-heading button {
+  padding: 8px 60px;
 }
-.blog-post{
+.blog-post {
+  margin-top: 10px;
   background-color: white;
-box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
-padding: 10px 15px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+  padding: 10px 15px;
 }
-.blog-post h5{
+.blog-post h5 {
   margin: 0 0 10px 0;
 }
-.blog-post > p{
+.blog-post > p {
   text-align: justify;
   padding: 0 0 10px 0;
 }
-.blog-post a{
+.blog-post a {
   color: #f4c613;
   font-weight: 600;
 }
-.blog-post a:hover{
+.blog-post a:hover {
   color: #618ff3;
 }
-.post-meta{
+.post-meta {
   margin-top: 20px;
   border-top: 1px solid rgb(241, 241, 241);
   padding-top: 10px;
 }
 
-.post-meta p{
+.post-meta p {
   padding: 0;
   margin: 0;
   line-height: 30px;
 }
 
 /* =========== Blog Posts ============== */
+.about-datalist ul {
+  padding: 0;
+  list-style: none;
+}
+.about-datalist ul li i {
+  font-size: 20px;
+  text-align: center;
+  width: 30px;
+  margin-right: 10px;
+}
+.about-datalist ul li {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+  display: flex;
+}
+.about-scoicon ul {
+  list-style-type: none;
+  padding: 0;
+}
+.about-scoicon ul li {
+  display: inline-block;
+  padding: 0;
+}
+.about-scoicon ul li a {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 39px;
+  color: black;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+}
+
+.about-scoicon ul.socialicon{
+  margin: 0 !important;
+}
+
+ul.socialicon li:nth-child(1) a:hover {
+  background: #3b5998;
+  color: white;
+  border-color: transparent;
+}
+ul.socialicon li:nth-child(2) a:hover {
+  background: #ff3300;
+  color: white;
+  border-color: transparent;
+}
+ul.socialicon li:nth-child(3) a:hover {
+  background: #3066db;
+  color: white;
+  border-color: transparent;
+}
+.form-box{
+  margin-top: 20px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.form-box .row [class*='form-']{
+  margin-top: 15px !important;
+}
+.form-box .container{
+  margin-top: 20px;
+}
+
+.form-btn button{
+  margin-top: 15px;
+}
