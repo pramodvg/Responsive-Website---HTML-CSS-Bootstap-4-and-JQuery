@@ -154,8 +154,8 @@ section {
 /* =========================================================== */
 /* ************************ pading container */
 /* ============================================================ */
-.about-container {        
-  padding: 120px 0px;  
+.about-container {
+  padding: 120px 0px;
   /* set padding top - bottom nothing else*/
 }
 .about-container-md {
@@ -168,13 +168,12 @@ section {
   /* set padding top - bottom nothing else*/
 }
 
-
 /* =========================================================== */
 /* ************************ pading container End */
 /* ============================================================ */
 .verticaltx {
   display: inline-block;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .verticaltx h5 {
   transform: rotate(-90deg);
@@ -196,7 +195,7 @@ section {
   display: inline-block;
 }
 .verticaltx h2 {
-  margin-left: 30px;
+  margin: 0 0 0 30px;
 }
 .verticaltx h2,
 .heading-horizontal h2 {
@@ -281,8 +280,11 @@ section {
 /*===================  about END ============================*/
 
 /* ========================= Team css ========================= */
-.verticaltx p {
-  margin-top: 30px;
+
+.verticaltx,
+.blog-heading p{
+  margin: 0;
+  padding: 40px 10px 0 0;
   text-align: justify;
 }
 
@@ -454,17 +456,32 @@ ul.socialicon li:nth-child(3) a:hover {
   color: #212226;
 }
 .service-right-list {
+  margin-bottom: 20px;
   text-align: left;
 }
 .service-right-list p {
   font-size: 13px;
   text-align: justify;
   margin-top: 10px;
+  padding: 0;
+}
+.service-img {
+  height: 100%;
 }
 .service-img img {
-  padding: 50px;
+  position: relative;
+  top: 50%;
+  padding: 050px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  margin-top: -60px;
 }
 .service-right-list h5 {
+  margin: 0;
+
   color: #f4c613;
 }
 .service-right-list h3 {
@@ -512,10 +529,13 @@ ul.socialicon li:nth-child(3) a:hover {
   line-height: 24px;
   margin-bottom: 30px;
 }
-.service-left-container button,.pricing-btn button {
+.service-left-container button,
+.pricing-btn button,
+.blog-btn {
   border: 1px solid #f4c613;
   padding: 8px 30px;
   border-radius: 50px;
+  outline: 0;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -527,6 +547,13 @@ ul.socialicon li:nth-child(3) a:hover {
   -moz-transition: all 400ms;
   -ms-transition: all 400ms;
   -o-transition: all 400ms;
+}
+/* remove button default border on clicked */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+  box-shadow: none;
 }
 .service-left-container button:hover {
   border: 1px solid #212226;
@@ -732,7 +759,7 @@ ul.socialicon li:nth-child(3) a:hover {
   padding: 20px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
-#dark{
+#dark {
   background-color: black;
   color: white;
 }
@@ -747,14 +774,13 @@ ul.socialicon li:nth-child(3) a:hover {
   display: table-row;
 }
 .rate-box h2,
-p {
+.rate-box p {
   text-align: center;
   padding: 0;
   margin: 0;
   padding-left: 12px;
-
 }
-.rate-box i{
+.rate-box i {
   color: #bbb;
   margin-top: 11px;
   position: absolute;
@@ -774,118 +800,159 @@ p {
   vertical-align: top;
   display: table-cell;
 }
-.rate-dis p{
+.rate-dis p {
   text-align: justify;
 }
-.price-list ul{
+.price-list ul {
   padding: 0;
- list-style: none;
+  list-style: none;
 }
-.price-list ul li p{
+.price-list ul li p {
   margin: 15px 0;
   text-align: left;
   padding: 0;
 }
-.price-list ul li p i{
+.price-list ul li p i {
   margin-right: 10px;
 }
-.pricing-btn{
+.pricing-btn {
   margin-top: 50px;
 }
-.pricing-btn button{
+.pricing-btn button {
   width: 100%;
 }
-#dark-btn button{
+#dark-btn button {
   background-color: white;
   color: black;
 }
 .pricing-box:hover,
-#dark:hover{
+#dark:hover {
   color: white;
   background-color: #f4c613;
 }
 .pricing-box:hover h4,
-#dark:hover h4{
- color: white;
+#dark:hover h4 {
+  color: white;
 }
 .pricing-box:hover i,
-#dark:hover i{
- color: white;
+#dark:hover i {
+  color: white;
 }
 .pricing-box:hover button,
-#dark:hover button{
+#dark:hover button {
   border: black;
-background-color: black;
-color: white;
+  background-color: black;
+  color: white;
 }
 
 /* =============== Pricing box end ================ */
 
-
 /* ============ CountDown ============== */
-#counter-heading .verticaltx{
+#counter-heading .verticaltx {
   color: white;
 }
-#auto-counter{
+#auto-counter {
   background-image: url(../img/stats/stats-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#counter-overly{
+#counter-overly {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.counter-box{
+.counter-box {
   padding: 30px 0;
   margin: 0 20px;
-  background-color: rgba(255,255,255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
-.counter-box i{
+.counter-box i {
   color: #f4c613;
   font-size: 35px;
- 
 }
-.counter-box h3{
+.counter-box h3 {
   margin: 8px 3px 0 0;
 }
-.counter-box p{
+.counter-box p {
   padding: 0;
   font-size: 10px;
   font-weight: 100;
 }
-.counter-box:hover i{
+.counter-box:hover i {
   color: black;
   transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
   -o-transform: translateY(-20px);
-  transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
-.counter-box:hover{
+.counter-box:hover {
   background-color: #f4c613;
-  transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 /* ============ CountDown End============== */
 
-
 /* ============ Our Clients ========== */
-.client-icon{
+.client-icon {
   padding: 0 10px;
   margin: 0 auto;
   max-width: 150px;
   line-height: 100px;
 }
-.client-icon img{
+.client-icon img {
   display: inline-block !important;
 }
+.blog-heading button {
+  margin-top: 20px;
+}
+/* ========== Our Client End ==========*/
+
+/* =========== Blog Posts ============== */
+#blog-section{
+  background-color: #f4f4f4;
+}
+.blog-heading button{
+    padding: 8px 60px;
+}
+.blog-post{
+  background-color: white;
+box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+padding: 10px 15px;
+}
+.blog-post h5{
+  margin: 0 0 10px 0;
+}
+.blog-post > p{
+  text-align: justify;
+  padding: 0 0 10px 0;
+}
+.blog-post a{
+  color: #f4c613;
+  font-weight: 600;
+}
+.blog-post a:hover{
+  color: #618ff3;
+}
+.post-meta{
+  margin-top: 20px;
+  border-top: 1px solid rgb(241, 241, 241);
+  padding-top: 10px;
+}
+
+.post-meta p{
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+}
+
+/* =========== Blog Posts ============== */
