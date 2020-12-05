@@ -47,8 +47,14 @@
       type="text/css"
       href="Resources/css/megnific-popup/magnific-popup.css"
     />
+    <link rel="stylesheet" href="Resources/css/animation/animate.min.css" />
 
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Resources/css/responsive.css"
+    />
   </head>
 
   <body>
@@ -72,22 +78,31 @@
       <div id="home-overlay"></div>
       <div id="home-container">
         <div id="home-content" class="text-center">
-          <div class="homecontenttx">
-            <h1>Android and</h1>
-            <h1 id="home-text">
-              Web Development By <span id="home-innerttxt">Pramod</span>
-            </h1>
-
-            <p id="home-tx">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-              aspernatur?
-            </p>
+          <div class="cotainer">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="homecontenttx text-center">
+                  <h1 id="home-heading-1" class="animated animate__fadeInDown">
+                    Android and
+                  </h1>
+                  <h1 id="home-text">
+                    Web Development By <span id="home-innerttxt">Pramod</span>
+                  </h1>
+      
+                  <p id="home-tx">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                    aspernatur?
+                  </p>
+                </div>
+                <div id="home-btn">
+                  <button type="button" class="btn btn-general btn-home">
+                    Start Now
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="home-btn">
-            <button type="button" class="btn btn-general btn-home">
-              Start Now
-            </button>
-          </div>
+        
         </div>
       </div>
 
@@ -103,7 +118,10 @@
           <div class="container">
             <div class="row">
               <!-- left side -->
-              <div class="col-md-6">
+              <div
+                class="col-md-6 col-sm-6 wow animate__slideInLeft"
+                data-wow-duration="1.5s"
+              >
                 <div id="ab-left-box">
                   <div class="verticaltx">
                     <h5 class="ab-vtx1">who we are</h5>
@@ -113,7 +131,10 @@
               </div>
 
               <!-- right side -->
-              <div class="col-md-6">
+              <div
+                class="col-md-6 col-sm-6 wow animate__slideInRight"
+                data-wow-duration="1.5s"
+              >
                 <div id="ab-right-box">
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -133,7 +154,10 @@
             </div>
 
             <div class="row">
-              <div class="col-md-12">
+              <div
+                class="col-md-12 wow animate__fadeInUp"
+                data-wow-duration="1.5s"
+              >
                 <div id="about-img" class="text-center">
                   <img
                     src="Resources/img/about/about.png"
@@ -153,7 +177,10 @@
       <div class="card-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div
+              class="col-md-4 col-sm-4 wow animate__fadeInLeft"
+              data-wow-duration="1s"
+            >
               <div class="cardbox text-center">
                 <i class="fa fa-rocket" aria-hidden="true"></i>
 
@@ -169,7 +196,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 wow animate__fadeInUp" data-wow-duration="2s">
               <div class="cardbox text-center">
                 <i class="fa fa-eye" aria-hidden="true"></i>
 
@@ -183,7 +210,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4 col-sm-4 wow animate__fadeInRight"
+              data-wow-duration="1s"
+            >
               <div class="cardbox text-center">
                 <i class="fa fa-pencil" aria-hidden="true"></i>
 
@@ -208,7 +238,10 @@
       <div class="about-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div
+              class="col-md-6 col-sm-6 wow animate__slideInLeft"
+              data-wow-duration="1.5s"
+            >
               <div class="verticaltx">
                 <h5 class="ab-vtx1">who we are</h5>
                 <h2>
@@ -224,7 +257,10 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div
+              class="col-md-6 col-sm-6 wow animate__slideInRight"
+              data-wow-duration="1.5s"
+            >
               <div id="team-members" class="owl-carousel owl-theme">
                 <div class="team-member">
                   <img src="Resources/img/team/team-2.jpg" />
@@ -331,10 +367,13 @@
           </div>
           <div id="progress-container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6 wow animate__fadeInUp">
                 <div class="skill">
                   <h4>Web Desing</h4>
-                  <div class="progress">
+                  <div
+                    class="progress"
+                    data-wow-duration="1.5s"
+                  >
                     <div
                       class="progress-bar"
                       role="progressbar"
@@ -348,7 +387,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div
+                class="col-md-6 col-sm-6 wow animate__fadeInUp"
+                data-wow-duration="1.5s"
+              >
                 <div class="skill">
                   <h4>PhotoShop</h4>
                   <div class="progress">
@@ -365,7 +407,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div
+                class="col-md-6 col-sm-6 wow animate__fadeInUp"
+                data-wow-duration="1.5s"
+              >
                 <div class="skill">
                   <h4>Android Development</h4>
                   <div class="progress">
@@ -382,7 +427,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div
+                class="col-md-6 col-sm-6 wow animate__fadeInUp"
+                data-wow-duration="1.5s"
+              >
                 <div class="skill">
                   <h4>Web Desing</h4>
                   <div class="progress">
@@ -410,7 +458,7 @@
         <div class="about-container">
           <div class="container text-center">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 wow animate__fadeIn">
                 <div id="statement">
                   <h3>
                     <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet,
@@ -430,12 +478,18 @@
     <section id="service">
       <div class="about-container">
         <div class="container text-center">
-          <div class="heading-horizontal">
+          <div
+            class="heading-horizontal wow animate__slideInDown"
+            data-wow-duration="1.5s"
+          >
             <h5>what we do</h5>
             <h2>Our Service</h2>
           </div>
           <div class="row">
-            <div class="col-md-7">
+            <div
+              class="col-md-7 col-sm-7 wow animate__slideInLeft"
+              data-wow-duration="1.5s"
+            >
               <div class="service-img text-center">
                 <img
                   src="Resources/img/services/laptop-lamp.png"
@@ -444,16 +498,19 @@
                 />
               </div>
             </div>
-            <div class="col-md-5">
+            <div
+              class="col-md-5 col-sm-5 wow animate__slideInRight"
+              data-wow-duration="1.5s"
+            >
               <div class="container">
                 <div class="service-item">
                   <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="service-icon">
                         <i class="fa fa-paint-brush"></i>
                       </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-10">
                       <div class="service-right-list">
                         <h5>service 01</h5>
                         <h3>Web Desing</h3>
@@ -470,12 +527,12 @@
                 </div>
                 <div class="service-item">
                   <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="service-icon">
                         <i class="fa fa-laptop"></i>
                       </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-10">
                       <div class="service-right-list">
                         <h5>service 02</h5>
                         <h3>Android Developer</h3>
@@ -492,12 +549,12 @@
                 </div>
                 <div class="service-item">
                   <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="service-icon">
                         <i class="fa fa-paper-plane"></i>
                       </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-10">
                       <div class="service-right-list">
                         <h5>service 03</h5>
                         <h3>IOS Developer</h3>
@@ -650,196 +707,202 @@
 
     <section id="work">
       <div class="about-container-md">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="portfolio-heading">
-                <div class="verticaltx">
-                  <h5 class="ab-vtx1">find our work</h5>
-                  <h2>Our <br />Amazing<strong>Work</strong></h2>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 wow animate__slideInLeft"
+            data-wow-duration="1.5s"
+          >
+            <div id="portfolio-heading">
+              <div class="verticaltx">
+                <h5 class="ab-vtx1">find our work</h5>
+                <h2>Our <br />Amazing<strong>Work</strong></h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div id="filter-buttons-gp">
+              <button class="active" data-filter="*">
+                <span>all</span>
+              </button>
+              <button data-filter=".webb">
+                <span>logo</span>
+              </button>
+              <button data-filter=".desin">
+                <span>web</span>
+              </button>
+              <button data-filter=".mobile">
+                <span>mobile</span>
+              </button>
+              <button data-filter=".desktop">
+                <span>desktop</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="portfolio-wrapper">
+        <div id="isotop-container">
+          <div
+            class="row no-gutters wow animate__fadeInUp"
+            data-wow-duration="1.5s"
+          >
+            <div class="col-md-3 col-sm-6 col-xs-12 desktop mobile webb">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/001.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/001.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
-              <div id="filter-buttons-gp">
-                <button class="active" data-filter="*">
-                  <span>all</span>
-                </button>
-                <button data-filter=".webb">
-                  <span>logo</span>
-                </button>
-                <button data-filter=".desin">
-                  <span>web</span>
-                </button>
-                <button data-filter=".mobile">
-                  <span>mobile</span>
-                </button>
-                <button data-filter=".desktop">
-                  <span>desktop</span>
-                </button>
+            <div class="col-md-3 col-sm-6 col-xs-12 mobile">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/002.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/002.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 desin">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/003.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/003.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 webb desktop">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/004.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/004.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 webb">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/005.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/005.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 desin mobile webb">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/006.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/006.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 mobile desktop">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/007.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/007.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 desktop">
+              <div class="portfolio-item">
+                <a
+                  href="Resources/img/portfolio/008.jpg"
+                  title="Add Disctiption"
+                >
+                  <img
+                    src="Resources/img/portfolio/008.jpg"
+                    class="img-fluid"
+                    alt="01"
+                  />
+                </a>
+                <div class="work-overly">
+                  <h3>Web Desing</h3>
+                  <span></span>
+                  <h5>developing website</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <section id="portfolio-wrapper">
-          <div id="isotop-container">
-            <div class="row no-gutters">
-              <div class="col-md-3 desktop mobile webb">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/001.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/001.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mobile">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/002.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/002.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 desin">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/003.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/003.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 webb desktop">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/004.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/004.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 webb">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/005.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/005.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 desin mobile webb">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/006.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/006.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mobile desktop">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/007.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/007.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 desktop">
-                <div class="portfolio-item">
-                  <a
-                    href="Resources/img/portfolio/008.jpg"
-                    title="Add Disctiption"
-                  >
-                    <img
-                      src="Resources/img/portfolio/008.jpg"
-                      class="img-fluid"
-                      alt="01"
-                    />
-                  </a>
-                  <div class="work-overly">
-                    <h3>Web Desing</h3>
-                    <span></span>
-                    <h5>developing website</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      </section>
       </div>
     </section>
 
@@ -848,21 +911,24 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="verticaltx">
+            <div
+              class="verticaltx wow animate__slideInLeft"
+              data-wow-duration="1.5s"
+            >
               <h5 class="ab-vtx1">who we are</h5>
               <h2>What Our <br /><strong>Customers</strong> Say</h2>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 wow animate__fadeIn" data-wow-duration="2s">
             <div id="feedback-slider" class="owl-carousel owl-theme">
               <div class="feedback-box">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="feed-title">
                       <h4>Quality Support</h4>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="stars">
                       <ul>
                         <li><i class="fa fa-star"></i></li>
@@ -882,7 +948,7 @@
                   dolores vel nesciunt aliquid nulla?
                 </p>
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-3">
                     <div class="feed-img">
                       <img
                         src="Resources/img/testimonial/client-1.jpg"
@@ -891,7 +957,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-md-9 col-sm-9">
                     <div class="feed-user-data">
                       <h6>pramod vaghasia</h6>
                       <h6>Yash Anghan</h6>
@@ -901,12 +967,12 @@
               </div>
               <div class="feedback-box">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-6 col-sm-6">
                     <div class="feed-title">
                       <h4>Quality Support</h4>
                     </div>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-6 col-sm-6">
                     <div class="stars">
                       <ul>
                         <li><i class="fa fa-star"></i></li>
@@ -917,21 +983,16 @@
                     </div>
                   </div>
                 </div>
+                <p class="feed-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus veritatis, totam doloribus commodi nemo, culpa facere
+                  voluptas nihil praesentium minima nesciunt necessitatibus
+                  excepturi, officia enim at ipsa aliquid nostrum vel accusamus
+                  fuga odio. Quaerat minus illum, architecto quas cum eveniet
+                  dolores vel nesciunt aliquid nulla?
+                </p>
                 <div class="row">
-                  <div class="col-md-12">
-                    <p class="feed-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Possimus veritatis, totam doloribus commodi nemo, culpa
-                      facere voluptas nihil praesentium minima nesciunt
-                      necessitatibus excepturi, officia enim at ipsa aliquid
-                      nostrum vel accusamus fuga odio. Quaerat minus illum,
-                      architecto quas cum eveniet dolores vel nesciunt aliquid
-                      nulla?
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-3 col-sm-3">
                     <div class="feed-img">
                       <img
                         src="Resources/img/testimonial/client-1.jpg"
@@ -940,7 +1001,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-10">
+                  <div class="col-md-9 col-sm-9">
                     <div class="feed-user-data">
                       <h6>pramod vaghasia</h6>
                       <h6>Yash Anghan</h6>
@@ -950,12 +1011,12 @@
               </div>
               <div class="feedback-box">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-6 col-sm-6">
                     <div class="feed-title">
                       <h4>Quality Support</h4>
                     </div>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-6 col-sm-6">
                     <div class="stars">
                       <ul>
                         <li><i class="fa fa-star"></i></li>
@@ -966,21 +1027,16 @@
                     </div>
                   </div>
                 </div>
+                <p class="feed-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus veritatis, totam doloribus commodi nemo, culpa facere
+                  voluptas nihil praesentium minima nesciunt necessitatibus
+                  excepturi, officia enim at ipsa aliquid nostrum vel accusamus
+                  fuga odio. Quaerat minus illum, architecto quas cum eveniet
+                  dolores vel nesciunt aliquid nulla?
+                </p>
                 <div class="row">
-                  <div class="col-md-12">
-                    <p class="feed-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Possimus veritatis, totam doloribus commodi nemo, culpa
-                      facere voluptas nihil praesentium minima nesciunt
-                      necessitatibus excepturi, officia enim at ipsa aliquid
-                      nostrum vel accusamus fuga odio. Quaerat minus illum,
-                      architecto quas cum eveniet dolores vel nesciunt aliquid
-                      nulla?
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-3 col-sm-3">
                     <div class="feed-img">
                       <img
                         src="Resources/img/testimonial/client-1.jpg"
@@ -989,10 +1045,10 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-10">
+                  <div class="col-md-9 col-sm-9">
                     <div class="feed-user-data">
-                      <p>qquave quazi</p>
-                      <p>Yash Anghan</p>
+                      <h6>pramod vaghasia</h6>
+                      <h6>Yash Anghan</h6>
                     </div>
                   </div>
                 </div>
@@ -1009,15 +1065,21 @@
       <div class="about-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div
+              class="col-md-12 text-center wow animate__slideInDown"
+              data-wow-duration="1.5s"
+            >
               <div class="heading-horizontal">
                 <h5>lovely customerd</h5>
                 <h2>Our Pricing</h2>
               </div>
             </div>
           </div>
-          <div class="row" style="margin: 0 40px">
-            <div class="col-md-4">
+          <div class="row">
+            <div
+              class="col-md-4 col-sm-4 col-xs-12 wow animate__slideInLeft"
+              data-wow-duration="1.5s"
+            >
               <div class="pricing-box">
                 <h4>Basic</h4>
                 <div class="line"></div>
@@ -1061,8 +1123,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 col-xs-12 wow animate__fadeInUp" data-wow-duration="2s">
               <div id="dark" class="pricing-box">
                 <h4>Basic</h4>
                 <div class="line"></div>
@@ -1106,7 +1167,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4 col-sm-4 col-xs-12 wow animate__slideInRight"
+            data-wow-duration="1.5s">
               <div class="pricing-box">
                 <h4>Basic</h4>
                 <div class="line"></div>
@@ -1164,14 +1227,17 @@
             <div class="row">
               <div class="col-md-12">
                 <div id="counter-heading">
-                  <div class="verticaltx">
-                    <h5 class="ab-vtx1">fun facts</h5>
+                  <div
+                    class="verticaltx wow animate__slideInLeft"
+                    data-wow-duration="1.5s"
+                  >
+                    <h5 class="ab-vtx1">fun Stats</h5>
                     <h2>We Deliver<br /><strong>Excellent</strong> Service</h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row wow animate__fadeInUp" data-wow-duration="1.5s">
               <div class="col-md-3">
                 <div class="counter-box text-center">
                   <i class="fa fa-bar-chart"></i>
@@ -1219,7 +1285,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row wow animate__bounceInLeft" data-wow-duration="1.5s">
             <div class="col-md-12">
               <div id="client-list" class="owl-carousel owl-theme text-center">
                 <div class="client-icon">
@@ -1291,7 +1357,7 @@
       <div class="card-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 wow animate__slideInLeft">
               <div class="blog-heading">
                 <div class="verticaltx">
                   <h5 class="ab-vtx1">Latest News</h5>
@@ -1308,7 +1374,10 @@
                 </button>
               </div>
             </div>
-            <div class="col-md-7">
+            <div
+              class="col-md-7 wow animate__fadeInUp"
+              data-wow-duration="1.5s"
+            >
               <div class="row">
                 <div class="col-md-6">
                   <div class="blog-post">
@@ -1322,7 +1391,7 @@
                     <a href="#">Read More ></a>
                     <div class="post-meta">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                           <p>
                             <img
                               src="Resources/img/blog/user-1.jpg"
@@ -1332,7 +1401,7 @@
                             Uaser Name
                           </p>
                         </div>
-                        <div class="col-md-6 text-right">
+                        <div class="col-md-6 col-sm-6 text-right">
                           <p>October 02,2017</p>
                         </div>
                       </div>
@@ -1381,7 +1450,7 @@
       <div class="card-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <div class="aboutus-details">
                 <div class="verticaltx">
                   <h5 class="ab-vtx1">Who We Are</h5>
@@ -1394,6 +1463,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="about-datalist">
+                      <h6>Gujarat,India</h6>
                       <ul>
                         <li><i class="fa fa-mobile"></i>+91 98524 45854</li>
                         <li><i class="fa fa-envelope"></i>support@me.com</li>
@@ -1407,8 +1477,9 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-12">
                     <div class="about-datalist">
+                      <h6>Waterloo, Canada</h6>
                       <ul>
                         <li><i class="fa fa-mobile"></i>+91 98524 45854</li>
                         <li><i class="fa fa-envelope"></i>support@me.com</li>
@@ -1491,7 +1562,6 @@
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -1499,18 +1569,21 @@
       </div>
     </section>
     <!-- ============== contact us end===================== -->
-    <section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </section>
+    <footer id="footer">
+      <p>
+        Copyright @ 2020 All Rights Reserved By <strong>Pramod Inc.</strong>
+      </p>
+    </footer>
 
-    <script src="js/jquery.js"></script>
+    <script src="Js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/waypoints/jquery.waypoints.min.js"></script>
+    <script src="Js/owl.carousel.min.js"></script>
+    <script src="Js/waypoints/jquery.waypoints.min.js"></script>
     <script src="JS/responsive-tabs/jquery.responsiveTabs.min.js"></script>
     <script src="JS/isotgallary/isotop.js"></script>
     <script src="JS/egnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="JS/waypoint/jquery.counterup.min.js"></script>
-    <script src="js/myscript.js"></script>
+    <script src="JS/wow/wow.min.js"></script>
+    <script src="Js/myscript.js"></script>
   </body>
 </html>

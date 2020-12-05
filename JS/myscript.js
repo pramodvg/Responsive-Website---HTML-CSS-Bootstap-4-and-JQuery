@@ -5,6 +5,14 @@ $(function () {
   $(window).on('load', function () {
     $('#preloader').delay(500).fadeOut();
     $('#loadingimg').delay(500).fadeOut('slow');
+    new WOW().init();
+    $('#home-heading-1').addClass('animate__animated animate__fadeInDown');
+    $('#home-text').addClass('animate__animated animate__fadeInLeft');
+    $('#home-tx').addClass('animate__animated animate__zoomIn');
+    $('#home-btn').addClass('animate__animated animate__zoomIn');
+    $('#down-arrow i').addClass('animate__animated animate__fadeInDown  animate__infinite');
+
+    
 
     //=======================  porfolli tabs
     $('.no-gutters').isotope({
@@ -45,6 +53,18 @@ $(function () {
       '<i class="fa fa-angle-left" aria-hidden="true"></i>',
       '<i class="fa fa-angle-right" aria-hidden="true"></i>',
     ],
+    responsive : {
+     
+      0 : {
+        items:1
+        
+      },
+  
+      480 : {
+        items:2
+      
+      },
+  }
   });
   $('#feedback-slider').owlCarousel({
     items: 1,

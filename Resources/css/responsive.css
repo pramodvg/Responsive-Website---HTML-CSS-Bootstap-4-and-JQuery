@@ -1,0 +1,166 @@
+/* large devices (desktops and laptop) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+}
+
+/* medium devices (landscape tablets) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .verticaltx h2 {
+    font-size: 29px;
+  }
+  .service-left-container {
+    padding: 38px 30px;
+    min-height: 300px;
+  }
+}
+
+/* small devices (potrait tab and small desktop) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ======= home section ========== */
+    .verticaltx h2 {
+        font-size: 29px;
+      }
+    .homecontenttx h1 {
+        font-size: 30px;
+      }
+      #ab-right-box p {
+        font-size: 10px;
+      }
+      .btn-home {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        font-size: 10px;
+}
+      
+/* ======= statement text ======== */
+#statement h3 {
+    font-size: 18px;
+}
+      
+    /* ============== service container ============ */
+  .service-left-container {
+    padding: 32px 30px;
+  }
+  .service-left-container {
+    min-height: 100px;
+  }
+  .service-left-container h2 {
+    font-size: 28px;
+    color: #bbb;
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
+  .service-left-container h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .service-left-container p {
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+  .service-left-container button,
+  .pricing-btn button,
+  .blog-btn,
+  .form-btn button {
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+
+  /* ============ card box home==========  */
+  .cardbox{
+      padding: 30px 10px;
+  }
+
+  /* ====== blog post ============ */
+  .post-meta .col-md-6 {
+    padding: 0;
+    margin: 0;
+  }
+  .post-meta p {
+    padding: 0 4px;
+    font-size: 9px;
+  }
+  .blog-heading button {
+    padding: 8px 30px;
+  }
+
+
+  /* ====== pricing boxes ===== */
+  .rate-dis{
+      padding-left: 10px;
+  }
+  .rate-box h2 {
+    font-size: 25px;
+  padding-left: 6px;
+}
+.rate-box i {
+    margin-top: 6px;
+  }
+}
+
+/* extra small devices (landscap phones and tab) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .verticaltx h2 {
+        font-size: 28px;
+      }
+    
+    .homecontenttx h1 {
+        font-size: 22px;
+      }
+      .btn-home {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        font-size: 12px;
+}
+#filter-buttons-gp button {
+    padding-right: 20px;
+  }
+  /* ======= statement text ======== */
+#statement h3 {
+    font-size: 12px;
+}
+.blog-heading button {
+    padding: 4px 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575.98px) { 
+    .verticaltx h2 {
+        font-size: 18px;
+      }
+    
+    .homecontenttx h1 {
+        font-size: 16px;
+      }
+      #filter-buttons-gp button {
+        padding-right: 15px;
+      }
+      .btn-home {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        font-size: 10px;
+}
+/* ======= statement text ======== */
+#statement h3 {
+    font-size: 10px;
+}
+.blog-heading button {
+    padding: 4px 15px;
+    font-size: 12px;
+  }
+ }
